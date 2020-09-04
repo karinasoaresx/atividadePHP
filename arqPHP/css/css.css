@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+#cabecalho {
+    width: 100%;
+    height: 100px;
+    background-color: #8993c1;
+    padding-top: 10px;
+    position: fixed;
+}
+
+#containerCabecalho {
+    height: 80px;
+    width: 100%;
+}
+
+#tituloCabecalho {
+    height: 100%;
+    width: 400px;
+    float: right;
+    margin-right: 500px;
+}
+
+#menu {
+    background-image: url(../imagens/icons8-menu-50.png);
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-left: 20px;
+    margin-top: -65px;
+}
+
+#containerMenu {
+    background-color: #8993c1;
+    width: 0px;
+    height: 0px;
+    margin-top: 50px;
+    padding: 15px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#menu:hover {
+    cursor: pointer;
+}
+
+#menu:hover > #containerMenu {
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+    width: 200px;
+    height: 150px;
+}
+
+.editMenu {
+    font-size: 22px;
+    margin-bottom: 5px;
+    border-bottom: 1px dotted black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.editMenu:hover {
+    background-color: #6b7ac2;
+}
+
+.last {
+    border-bottom: none;
+}
+
+#conteudo {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding-top: 100px;
+}
+
+.line {
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Special Elite", monospace;
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.typing-animation {
+    animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+      }
+
+@keyframes typing {
+    from {
+      width: 0;
+}
+    to {
+      width: 16em;
+    }
+}
+
+ @keyframes blinkCursor {
+     from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+     }
+     to {
+        border-right-color: transparent;
+     }
+}
+
+#media, #calculadora, #tabuada, #parImpar {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    padding-top: 120px;
+}
+
+#tabuada {
+    min-height: 500px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+#parImpar {
+    min-height: 500px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+#containerMedia, #containerCalculadora, #containerTabuada, #containerParImpar {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#containerTabuada, #containerParImpar {
+    min-height: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+#titulo {
+    background-color: #8993c1;
+    height: 70px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 17px;
+}
+
+#form, #formCalc, #formTab, #formParImpar {
+    height: 300px;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 20px;
+}
+
+#formCalc {
+    padding-top: 50px;
+}
+
+#formTab, #formParImpar {
+    padding-top: 20px;
+}
+
+input {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height: 25px;
+}
+
+select {
+    margin-bottom: 10px;
+    color: black;
+}
+
+option {
+    font-size: 15px;
+    color: black;
+}
+
+.botao, .botaoCalc, .botaoTab, .botaoParImp {
+    font-size: 20px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.botaoCalc {
+    margin-top: 19px;
+}
+
+.botaoParImp {
+    margin-top: 15px;
+}
+
+.botao:hover, .botaoCalc:hover, .botaoTab:hover, .botaoParImp:hover {
+    cursor: pointer;
+}
+
+#resultado, #resultadoCalc, #resultadoTab, #resultadoPar, #resultadoImpar {
+    text-align: center;
+    font-size: 25px;
+    height: 100px;
+    padding-top: 50px;
+    background-color: #8993c1;
+    color: white;
+}
+
+#resultadoCalc {
+    height: 120px;
+    margin-top: 10px;
+}
+
+#resultadoTab {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    min-height: 250px;
+    margin-top: 10px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+}
+
+#resultadoPar {
+    min-height: 230px;
+    width: 200px;
+    float: left;
+    background-color: #8993c1;
+    margin-top: -150px;
+    height: auto;
+    overflow: hidden;
+}
+
+#resultadoImpar {
+    min-height: 230px;
+    width: 200px;
+    float: right;
+    background-color: #8993c1;
+    margin-top: -150px;
+    height: auto;
+    overflow: hidden;
+}
+
+.editParImp {
+    background-color: black;
+    margin-top: -50px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.qntdParImp {
+    background-color: black;
+    margin-top: 185px;
+    font-size: 20px;
+}
+
+.reprovado {
+    background-color: red;
+}
+
+.aprovado {
+    background-color: green;
+}
+
+.recuperacao {
+    background-color: orange;
+}
+
+#erro, #erroCalc, #erroTab, #erroParImp {
+    background-color: #8993c1;
+    height: 30px;
+    width: 100%;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    float: right;
+}
+
+#erroCalc {
+    background-color: #8993c1;
+    height: 45px;
+}
+
+#erroTab {
+    height: 43px;
+}
+
+#erroParImp {
+    height: 50px;
+}
+
+#container_opcoes {
+    margin-top: 10px;
+}
+
+#rodape {
+    background-color: #8993c1;
+    width: 100%;
+    height: 50px;
+}
+
+#infoRodape {
+    height: 50px;
+    width: 80%;
+    margin-left: 250px;
+}
+
+#desenvTexto {
+    width: 450px;
+    height: 100%;
+    padding: 10px;
+    float: left;
+    margin-left: 180px;
+}
+
+#redesSociais {
+    height: 100%;
+    width: 20%;
+    float: right;
+}
+
+#email, #github, #whatsapp {
+    margin-left: 16px;
+    height: 50px;
+    width: 50px;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+#email {
+    background-image: url(../imagens/email.png);
+}
+
+#whatsapp {
+    background-image: url(../imagens/whatsapp.png);
+}
+
+#github {
+    background-image: url(../imagens/github.png);
+}
+
+#email:hover {
+    background-image: url(../imagens/emailhover.png);
+}
+
+#whatsapp:hover {
+    background-image: url(../imagens/whatsapphover.png);
+}
+
+#github:hover {
+    background-image: url(../imagens/githubhover.png);
+}
